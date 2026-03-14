@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "清华网络学堂BGM",
+  "version": "1.0",
+  "description": "点击提交作业按钮时自动播放音乐！",
+  "content_scripts": [
+    {
+      "matches": ["*://*.tsinghua.edu.cn/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["bgm.mp3"],
+      "matches": ["*://*.tsinghua.edu.cn/*"]
+    }
+  ]
+}
