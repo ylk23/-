@@ -14,7 +14,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["guanyu.mp3"],
+      "resources": ["bgm.mp3"],
       "matches": ["*://learn.tsinghua.edu.cn/*"]
     }
   ]
