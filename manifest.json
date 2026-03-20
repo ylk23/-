@@ -1,18 +1,21 @@
 {
   "manifest_version": 3,
-  "name": "清华网络学堂BGM",
+  "name": "清华网络学堂：释怀版",
   "version": "1.0",
-  "description": "点击提交作业按钮时自动播放音乐！",
+  "description": "全自动穿透清华统一身份认证登录网络学堂，并在提交作业后自动播放关羽之歌，彻底释怀。",
   "content_scripts": [
     {
-      "matches": ["*://*.tsinghua.edu.cn/*"],
+      "matches": [
+        "*://learn.tsinghua.edu.cn/*",
+        "*://id.tsinghua.edu.cn/*"
+      ],
       "js": ["content.js"]
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["bgm.mp3"],
-      "matches": ["*://*.tsinghua.edu.cn/*"]
+      "resources": ["guanyu.mp3"],
+      "matches": ["*://learn.tsinghua.edu.cn/*"]
     }
   ]
 }
